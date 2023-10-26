@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projekt Mehrwertsteuer-Rechner</title>
+    <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+<body>
+    <main>
+        <h1>Mehrwertsteuer-Rechner</h1>
+        <section class="calc_wrapper">
+            <form onsubmit="return false">
+                <div class="brutto_netto">
+                    <h2>Was soll berechnet werden?<span class="redStar">*</span></h2>
+                    <label for="nettoZuBrutto"><input type="radio" name="nettoOderBrutto" id="nettoZuBrutto" onclick="bruttoNettoChange()"> MwSt. aufschlagen (Netto zu Brutto)</label>
+                    <label for="bruttoZuNetto"><input type="radio" name="nettoOderBrutto" id="bruttoZuNetto" onclick="bruttoNettoChange()"> MwSt. abziehen (Brutto zu Netto)</label>
+                </div>
+                <div class="brutto_netto">
+                    <h2>Mehrwertsteuersatz<span class="redStar">*</span></h2>
+                    <label for="neunZehn"><input type="radio" name="MwStSatz" id="neunZehn"> 19%</label>
+                    <label for="sieBen"><input type="radio" name="MwStSatz" id="sieBen"> 7%</label>
+                </div>
+                <div>
+                    <p id="steuerDef-output">Nettobetrag (Preis ohne MwSt.) in €<span class="redStar">*</span></p>
+                    <input type="number" name="betrag" id="betrag-input">
+                </div>
+                <button type="submit" id="calculate">Berechne</button>
+            </form>
+            <article>
+                <h3>ERGEBNIS</h3>
+                <div>
+                    <h2>MwSt. Betrag</h2>
+                    <p id="mwst-output"></p><span class="euro">€</span>
+                </div>
+                <div>
+                    <h2 id="text-output">Bruttobetrag (Endpreis)</h2>
+                    <p id="result-output"></p><span class="euro">€</span>
+                </div>
+            </article>
+        </section>
+    </main>
+
+    <script src="./assets/js/main.js"></script>
+</body>
+</html>
