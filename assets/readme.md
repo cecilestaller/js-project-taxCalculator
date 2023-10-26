@@ -12,6 +12,8 @@
 
 ## Link
 
+https://cecilestaller.github.io/js-project-taxCalculator/
+
 ## Screenshot
 
 ![screenshot MwSt.-Rechner](./img/Bildschirmfoto%202023-10-26%20um%2017.37.28.png)
