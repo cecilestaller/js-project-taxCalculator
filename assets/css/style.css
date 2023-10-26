@@ -72,6 +72,7 @@ div:nth-of-type(3) input {
 button {
     padding: 1vh 36px;
     font-size: 1em;
+    color: black;
     background-color: white;
     border: 0.5px solid grey;
 }
